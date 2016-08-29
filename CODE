@@ -1,1 +1,21 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int letter;
+
+while(true) {
+    System.out.println();
+    System.out.println("Enter a word and it'll repeat backwards!");
+    String word = input.nextLine();
+    char[]digit = word.toCharArray();
+    for (letter = digit.length - 1; letter >= 0; letter--) {
+        System.out.print(digit[letter]);
+    }
+}
+    }
+}
 
